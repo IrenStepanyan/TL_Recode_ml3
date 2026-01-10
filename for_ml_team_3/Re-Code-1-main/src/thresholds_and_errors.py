@@ -7,15 +7,13 @@ import nltk
 from sklearn.metrics import f1_score
 from nltk.stem import WordNetLemmatizer
 
-# Download WordNet (if first run)
+
 nltk.download('wordnet')
 
 lemmatizer = WordNetLemmatizer()
 LABELS = ["label_1", "label_2", "label_3", "label_4"]
 
-# -----------------------------
-# 1️⃣ Preprocessing
-# -----------------------------
+
 def lemmatize_text(text):
     """Lowercase, remove non-alpha, and lemmatize"""
     text = re.sub(r'[^\w\s]', ' ', str(text).lower())
@@ -26,18 +24,13 @@ def preprocess_texts(texts):
     """Apply lemmatization to a list/series of texts"""
     return [lemmatize_text(t) for t in texts if isinstance(t, str) and t.strip()]
 
-# -----------------------------
-# 2️⃣ Load data
-# -----------------------------
+
 def load_validation_data(path):
     df = pd.read_csv(path)
     X_texts = preprocess_texts(df["text"])
     y_true = df[LABELS].values
     return df, X_texts, y_true
 
-# -----------------------------
-# 3️⃣ Find optimal thresholds
-# -----------------------------
 def find_best_thresholds(model, X_transformed, y_true):
     """
     For each label, find the threshold that maximizes F1 score.
@@ -45,13 +38,13 @@ def find_best_thresholds(model, X_transformed, y_true):
         thresholds (dict)
         probas (list of numpy arrays per label)
     """
-    probas = model.predict_proba(X_transformed)  # list of arrays per label
+    probas = model.predict_proba(X_transformed)  
     thresholds = {}
 
     for i, label in enumerate(LABELS):
         best_f1 = 0
         best_threshold = 0.5
-        probs = probas[i][:, 1]  # probability of class 1
+        probs = probas[i][:, 1]  
 
         for t in np.arange(0.1, 0.91, 0.05):
             preds = (probs >= t).astype(int)
@@ -64,9 +57,7 @@ def find_best_thresholds(model, X_transformed, y_true):
 
     return thresholds, probas
 
-# -----------------------------
-# 4️⃣ Collect mistakes
-# -----------------------------
+
 def collect_mistakes(raw_texts, y_true, probas, thresholds):
     """
     Returns a DataFrame of FP/FN for each label
@@ -89,11 +80,9 @@ def collect_mistakes(raw_texts, y_true, probas, thresholds):
 
     return pd.DataFrame(rows)
 
-# -----------------------------
-# 5️⃣ Main execution
-# -----------------------------
+
 def main():
-    # Paths - adjust if needed
+  
     VAL_PATH = "data/dataset_C_val.csv"
     TRAIN_PATH = "data/dataset_C_train.csv"
     MODEL_PATH = "model.pkl"
@@ -114,12 +103,12 @@ def main():
     thresholds, probas = find_best_thresholds(model, X_transformed, y_true)
     print("Thresholds:", thresholds)
 
-    # Save thresholds
+
     with open("thresholds.json", "w") as f:
         json.dump(thresholds, f, indent=2)
     print("Saved thresholds.json")
 
-    # Collect mistakes
+
     print("Collecting false positives / false negatives...")
     mistakes_df = collect_mistakes(df_val["text"], y_true, probas, thresholds)
     mistakes_df.to_csv("mistakes.csv", index=False)
