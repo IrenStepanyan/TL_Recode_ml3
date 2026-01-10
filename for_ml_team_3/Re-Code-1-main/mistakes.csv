@@ -1,0 +1,95 @@
+text,label,true,predicted,probability,type
+reply fix question message account status warning help warning fix,label_1,0,1,0.7984211926763897,FP
+please response account system access update thanks question urgent info message feedback,label_1,1,0,0.49638466909730294,FN
+access fix request access reply info feedback,label_1,1,0,0.42310972687771536,FN
+reply report feedback error urgent response update,label_1,0,1,0.6652912038132365,FP
+problem help error update request note thanks system update,label_1,1,0,0.4469871959662552,FN
+note access delay policy please reply access system feedback review warning,label_1,0,1,0.6503944297546524,FP
+message error warning review response thanks response check please content problem policy issue feedback message,label_1,1,0,0.4529254088532089,FN
+note notice problem info please thanks thanks support notice,label_1,1,0,0.3026954663504954,FN
+info feedback status access help request support response issue please error error report,label_1,1,0,0.4295479943632444,FN
+delay delay message error thanks problem,label_1,1,0,0.30214712226680424,FN
+urgent error support message question support request,label_1,0,1,0.6823044596597545,FP
+error update support update system account,label_1,0,1,0.5404663582374644,FP
+info warning system message info system feedback help message policy support account info content,label_1,0,1,0.6610091493498785,FP
+access reply problem account error review error support support,label_1,0,1,0.5310714830551504,FP
+check info urgent notice issue problem issue check feedback status note status warning request update,label_1,0,1,0.6518157150384155,FP
+message access please system support policy content note check support thanks update thanks,label_1,1,0,0.43068665213124063,FN
+policy issue message info delay please thanks access question help status info account,label_1,1,0,0.31711383170963237,FN
+message question update note response request system urgent reply warning note support info,label_1,0,1,0.7335858604178296,FP
+request help delay issue delay thanks delay delay policy question feedback,label_2,0,1,0.5711913061558967,FP
+error system feedback thanks urgent access feedback fix account update review please request warning,label_2,0,1,0.6966913120419599,FP
+response issue problem issue reply support note system policy content,label_2,0,1,0.6918104033912436,FP
+report status check content reply,label_2,0,1,0.626010094354434,FP
+response info access delay report policy help response notice issue support error review problem note,label_2,0,1,0.8187599247814678,FP
+account please status question thanks update warning help review content notice please,label_2,1,0,0.39876343179585994,FN
+please problem fix help update message response error thanks message problem delay,label_2,0,1,0.8435930607381565,FP
+check note thanks message request,label_2,1,0,0.4147869240479831,FN
+reply delay issue notice warning,label_2,0,1,0.6168174508295285,FP
+thanks issue help content system content access,label_2,0,1,0.5554588166207582,FP
+note access delay policy please reply access system feedback review warning,label_2,0,1,0.5982289774922455,FP
+message error warning review response thanks response check please content problem policy issue feedback message,label_2,0,1,0.7036877829270765,FP
+system report account check policy update,label_2,0,1,0.5570554296746882,FP
+account please system thanks status content warning warning issue system,label_2,0,1,0.6093886327703243,FP
+thanks thanks delay policy reply please reply problem request note message warning,label_2,0,1,0.5762506590191054,FP
+please problem report fix please status system,label_2,0,1,0.775843781318622,FP
+review help info content support warning thanks please check account info request,label_2,0,1,0.631468820261529,FP
+feedback update account fix delay notice note system issue content,label_2,1,0,0.5256890132216135,FN
+check info urgent notice issue problem issue check feedback status note status warning request update,label_2,1,0,0.5011489536663172,FN
+thanks feedback note account thanks account error update,label_2,1,0,0.5087944742575683,FN
+reply account urgent thanks notice reply please please note status update review reply,label_2,1,0,0.44600906157091047,FN
+check content status content update help help status policy reply system note info request content,label_2,0,1,0.5985600214740682,FP
+review review help check please question error access,label_2,0,1,0.7137035811732761,FP
+help notice notice check content please urgent thanks,label_2,0,1,0.6612391975961794,FP
+account message policy response access,label_2,0,1,0.5698165199429129,FP
+report notice account warning thanks check urgent feedback review info status,label_2,0,1,0.5508109476254921,FP
+error info question update support update,label_2,1,0,0.5407917103370792,FN
+warning support status question policy policy feedback status status report info message message,label_3,1,0,0.4004178050088971,FN
+request help delay issue delay thanks delay delay policy question feedback,label_3,1,0,0.41187232312808675,FN
+response issue problem issue reply support note system policy content,label_3,0,1,0.5118825852000215,FP
+report status check content reply,label_3,0,1,0.48204050535750487,FP
+feedback account system report policy fix question delay note access,label_3,1,0,0.2740434932071533,FN
+response info access delay report policy help response notice issue support error review problem note,label_3,1,0,0.3781759971991771,FN
+please response account system access update thanks question urgent info message feedback,label_3,1,0,0.394729074223985,FN
+urgent problem feedback problem thanks check question,label_3,1,0,0.34305608934583237,FN
+info reply support check review question notice info question report report check fix,label_3,0,1,0.46787070160040634,FP
+thanks check report warning status reply urgent notice access,label_3,0,1,0.45651269870662153,FP
+please problem fix help update message response error thanks message problem delay,label_3,1,0,0.41124758230987607,FN
+policy reply response report account problem info update,label_3,0,1,0.48129428277631287,FP
+info urgent notice thanks check note message message urgent response,label_3,0,1,0.4751149176413993,FP
+status question delay policy error help review reply please content account please review warning policy,label_3,0,1,0.6406333519499001,FP
+status response delay support thanks error please content,label_3,0,1,0.7020046829245397,FP
+check please policy response policy thanks account note note,label_3,0,1,0.5590458444408412,FP
+account system response content review update access request update policy response response,label_3,0,1,0.537856084098604,FP
+delay delay message error thanks problem,label_3,1,0,0.3349224101827039,FN
+request update issue fix notice delay message info check fix policy note thanks note report,label_3,1,0,0.43462862270313385,FN
+message message support support thanks thanks please message problem thanks notice note report note,label_3,0,1,0.610165653057291,FP
+access reply problem account error review error support support,label_3,0,1,0.46371345320027607,FP
+help note content response request note fix fix fix question policy,label_3,1,0,0.44347293915031294,FN
+question support report urgent report,label_3,0,1,0.4711997791013616,FP
+thanks feedback note account thanks account error update,label_3,1,0,0.2972262206793549,FN
+review review help check please question error access,label_3,0,1,0.5774272337035865,FP
+report notice account warning thanks check urgent feedback review info status,label_3,0,1,0.5180881477517328,FP
+feedback urgent help system status support review help status review fix content fix,label_4,0,1,0.514270357123715,FP
+warning issue account note request check response urgent issue account,label_4,0,1,0.4970466390503567,FP
+account please status question thanks update warning help review content notice please,label_4,1,0,0.2591188674863288,FN
+thanks check report warning status reply urgent notice access,label_4,1,0,0.43983388163002857,FN
+access fix request access reply info feedback,label_4,1,0,0.34718072431317143,FN
+please question issue error please info,label_4,1,0,0.34868782692663075,FN
+check note thanks message request,label_4,1,0,0.32301454821369574,FN
+fix fix fix account status urgent info access urgent,label_4,0,1,0.45447224285833043,FP
+delay policy info issue problem note please please error issue error problem report report problem,label_4,0,1,0.8144427957716345,FP
+warning request feedback update feedback urgent response request warning warning reply delay issue delay,label_4,1,0,0.37674888343802354,FN
+status response delay support thanks error please content,label_4,0,1,0.4553138383989532,FP
+problem help error update request note thanks system update,label_4,1,0,0.3375176124292274,FN
+policy issue error access urgent error problem response info reply request help thanks,label_4,1,0,0.377883571475739,FN
+account please system thanks status content warning warning issue system,label_4,0,1,0.4825691085535807,FP
+account system response content review update access request update policy response response,label_4,1,0,0.42976289863507805,FN
+fix error question status account status,label_4,0,1,0.48584083850986187,FP
+content reply note notice response support problem report account problem system problem reply access delay,label_4,1,0,0.4351790659315244,FN
+policy system error delay support reply info review feedback,label_4,0,1,0.5158080504551174,FP
+message message support support thanks thanks please message problem thanks notice note report note,label_4,1,0,0.44545932727430565,FN
+warning thanks warning delay fix,label_4,0,1,0.4868563264382164,FP
+system update update request message check reply review report message account reply info error,label_4,1,0,0.33711984088134067,FN
+report notice account warning thanks check urgent feedback review info status,label_4,0,1,0.5128668808445149,FP
+info account check fix account support issue problem notice support question error error message,label_4,0,1,0.48089492659448335,FP
